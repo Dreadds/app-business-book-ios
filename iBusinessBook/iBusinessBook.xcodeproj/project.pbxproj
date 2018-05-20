@@ -56,6 +56,9 @@
 		9A243F4720B1DB420060D849 /* iBusinessBook */ = {
 			isa = PBXGroup;
 			children = (
+				CDCEDA1F20B226CC0018DC67 /* Network */,
+				CDCEDA1E20B226BB0018DC67 /* ViewController */,
+				CDCEDA1D20B226A40018DC67 /* Model */,
 				9A243F4820B1DB420060D849 /* AppDelegate.swift */,
 				9A243F4A20B1DB420060D849 /* ViewController.swift */,
 				9A243F4C20B1DB420060D849 /* Main.storyboard */,
@@ -65,6 +68,27 @@
 				9A243F4F20B1DB420060D849 /* iBusinessBook.xcdatamodeld */,
 			);
 			path = iBusinessBook;
+			sourceTree = "<group>";
+		};
+		CDCEDA1D20B226A40018DC67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDCEDA1E20B226BB0018DC67 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CDCEDA1F20B226CC0018DC67 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
