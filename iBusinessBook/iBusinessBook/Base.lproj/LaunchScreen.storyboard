@@ -20,44 +20,42 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-image" translatesAutoresizingMaskIntoConstraints="NO" id="fJq-cb-Ozj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="1UV-R5-YJ6"/>
-                                    <constraint firstAttribute="height" constant="667" id="y42-gF-jhy"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Book" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtr-Z1-9SD">
                                 <rect key="frame" x="51.5" y="248" width="272" height="171"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="272" id="eBl-4B-LSa"/>
-                                    <constraint firstAttribute="height" constant="171" id="vTj-O9-nql"/>
+                                    <constraint firstAttribute="height" constant="171" id="Z96-rP-uOA"/>
+                                    <constraint firstAttribute="width" constant="272" id="ovU-DX-eHH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="70"/>
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lleva tu empresa siempre contigo..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiR-8F-lWp">
-                                <rect key="frame" x="16" y="575" width="343" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="16" y="459" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xtr-Z1-9SD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AWK-Cr-iL9"/>
-                            <constraint firstItem="xtr-Z1-9SD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FYF-Vd-5d0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uiR-8F-lWp" secondAttribute="trailing" constant="16" id="VI9-Uv-kbh"/>
-                            <constraint firstItem="uiR-8F-lWp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XJv-dT-7Y6"/>
-                            <constraint firstItem="uiR-8F-lWp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gd1-CJ-a4q"/>
-                            <constraint firstItem="fJq-cb-Ozj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hnT-8o-anh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uiR-8F-lWp" secondAttribute="bottom" constant="68" id="wTX-Rm-TSR"/>
-                            <constraint firstItem="fJq-cb-Ozj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zAd-rz-L2V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uiR-8F-lWp" secondAttribute="trailing" constant="16" id="5c9-48-Fsx"/>
+                            <constraint firstItem="uiR-8F-lWp" firstAttribute="top" secondItem="xtr-Z1-9SD" secondAttribute="bottom" constant="40" id="BDM-js-AYE"/>
+                            <constraint firstItem="xtr-Z1-9SD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dvr-6R-aFC"/>
+                            <constraint firstItem="xtr-Z1-9SD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GrP-xt-qjU"/>
+                            <constraint firstItem="uiR-8F-lWp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RaF-c3-eLH"/>
+                            <constraint firstItem="fJq-cb-Ozj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fIk-Uj-tEu"/>
+                            <constraint firstItem="fJq-cb-Ozj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gjk-XZ-rfg"/>
+                            <constraint firstAttribute="bottom" secondItem="fJq-cb-Ozj" secondAttribute="bottom" id="h8R-g9-t5I"/>
+                            <constraint firstItem="fJq-cb-Ozj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vra-Xu-AVF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
