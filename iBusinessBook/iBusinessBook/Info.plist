@@ -35,6 +35,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>BusinessApiKey</key>
+	<string>bearer AiLdH_G7t_HKE8qL_o7v0OfWPUZdzWZwDfNrT1HMm0LYebh5igy_EpNQ2Inq-iRrXtQS1cKxOq8VMOi0Qns8MvZLbe6nIa8fYANl43KSG7TY22hBIP57mPszCyOhocaBklkkCROjb-rO_LWgbEn8iIWqdsQkA6hwzk-xhjOQtHQs-9rwsEe3I8lSD789hSzm01nHXJ24uAluTOHMgEjd8wAdE0KKY5BfUY5O5RpFsMMv6aVN7zxRs5dNyqL8epq111Yc4e1CnKeMC8z2oJVoZg</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -42,5 +44,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
