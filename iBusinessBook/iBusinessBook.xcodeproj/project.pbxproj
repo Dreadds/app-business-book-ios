@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08B9B23820DE5286008264A0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B9B22A20DE5268008264A0 /* Charts.framework */; };
-		08B9B23920DE5286008264A0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08B9B22A20DE5268008264A0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25709C7620DB536000FB63D7 /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25709C7520DB536000FB63D7 /* Local.swift */; };
 		25709C7D20DB578700FB63D7 /* BusinessApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25709C7C20DB578700FB63D7 /* BusinessApi.swift */; };
 		25A43A4C20DB605A00233F6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A43A4B20DB605A00233F6B /* HomeViewController.swift */; };
@@ -27,41 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		08B9B22920DE5268008264A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08B9B21420DE5267008264A0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
-			remoteInfo = "Charts-iOS";
-		};
-		08B9B22B20DE5268008264A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08B9B21420DE5267008264A0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
-			remoteInfo = "Charts-TV";
-		};
-		08B9B22D20DE5268008264A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08B9B21420DE5267008264A0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
-			remoteInfo = "Charts-OSX";
-		};
-		08B9B22F20DE5268008264A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08B9B21420DE5267008264A0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
-			remoteInfo = ChartsTests;
-		};
-		08B9B23A20DE5286008264A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08B9B21420DE5267008264A0 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
-			remoteInfo = "Charts-iOS";
-		};
 		CDC0A77920DA285E00E14EBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDC0A76E20DA285D00E14EBC /* SwiftyJSON.xcodeproj */;
@@ -240,7 +203,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				CDC0A7C420DA290000E14EBC /* AlamofireImage.framework in Embed Frameworks */,
-				08B9B23920DE5286008264A0 /* Charts.framework in Embed Frameworks */,
 				CDC0A78820DA286F00E14EBC /* SwiftyJSON.framework in Embed Frameworks */,
 				CDC0A7C020DA28F600E14EBC /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -250,7 +212,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08B9B21420DE5267008264A0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../Downloads/ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		25709C7520DB536000FB63D7 /* Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
 		25709C7C20DB578700FB63D7 /* BusinessApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessApi.swift; sourceTree = "<group>"; };
 		25A43A4B20DB605A00233F6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -273,7 +234,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B9B23820DE5286008264A0 /* Charts.framework in Frameworks */,
 				CDC0A7BF20DA28F600E14EBC /* Alamofire.framework in Frameworks */,
 				CDC0A7C320DA290000E14EBC /* AlamofireImage.framework in Frameworks */,
 			);
@@ -282,17 +242,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08B9B21520DE5267008264A0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				08B9B22A20DE5268008264A0 /* Charts.framework */,
-				08B9B22C20DE5268008264A0 /* Charts.framework */,
-				08B9B22E20DE5268008264A0 /* Charts.framework */,
-				08B9B23020DE5268008264A0 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		25709C7420DB533F00FB63D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,7 +270,6 @@
 		9A243F3C20B1DB410060D849 = {
 			isa = PBXGroup;
 			children = (
-				08B9B21420DE5267008264A0 /* Charts.xcodeproj */,
 				CDC0A7A520DA28D500E14EBC /* AlamofireImage.xcodeproj */,
 				CDC0A78C20DA28CD00E14EBC /* Alamofire.xcodeproj */,
 				CDC0A76E20DA285D00E14EBC /* SwiftyJSON.xcodeproj */,
@@ -415,7 +363,6 @@
 				CDC0A78A20DA286F00E14EBC /* PBXTargetDependency */,
 				CDC0A7C220DA28F600E14EBC /* PBXTargetDependency */,
 				CDC0A7C620DA290000E14EBC /* PBXTargetDependency */,
-				08B9B23B20DE5286008264A0 /* PBXTargetDependency */,
 			);
 			name = iBusinessBook;
 			productName = iBusinessBook;
@@ -459,10 +406,6 @@
 					ProjectRef = CDC0A7A520DA28D500E14EBC /* AlamofireImage.xcodeproj */;
 				},
 				{
-					ProductGroup = 08B9B21520DE5267008264A0 /* Products */;
-					ProjectRef = 08B9B21420DE5267008264A0 /* Charts.xcodeproj */;
-				},
-				{
 					ProductGroup = CDC0A76F20DA285D00E14EBC /* Products */;
 					ProjectRef = CDC0A76E20DA285D00E14EBC /* SwiftyJSON.xcodeproj */;
 				},
@@ -475,34 +418,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		08B9B22A20DE5268008264A0 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 08B9B22920DE5268008264A0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		08B9B22C20DE5268008264A0 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 08B9B22B20DE5268008264A0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		08B9B22E20DE5268008264A0 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 08B9B22D20DE5268008264A0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		08B9B23020DE5268008264A0 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 08B9B22F20DE5268008264A0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		CDC0A77A20DA285E00E14EBC /* SwiftyJSON.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -683,11 +598,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		08B9B23B20DE5286008264A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Charts-iOS";
-			targetProxy = 08B9B23A20DE5286008264A0 /* PBXContainerItemProxy */;
-		};
 		CDC0A78A20DA286F00E14EBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SwiftyJSON iOS";
