@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8kK-27-QeI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8kK-27-QeI">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -286,18 +286,66 @@
         <!--Profile-->
         <scene sceneID="dVv-mf-UfP">
             <objects>
-                <viewController id="Iye-a4-F7e" sceneMemberID="viewController">
+                <viewController id="Iye-a4-F7e" customClass="ProfileViewController" customModule="iBusinessBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDc-sJ-Dgh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company" translatesAutoresizingMaskIntoConstraints="NO" id="mnh-Er-lxR">
+                                <rect key="frame" x="107" y="84" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VIL-Rc-yD0"/>
+                                    <constraint firstAttribute="height" constant="100" id="iIf-4a-gCA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12j-ZA-gdF">
+                                <rect key="frame" x="346" y="84" width="51" height="30"/>
+                                <state key="normal" title="Update"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CompanyName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4me-X7-vfH">
+                                <rect key="frame" x="20" y="204" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6d3-5l-Ikv">
+                                <rect key="frame" x="20" y="241" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsT-sf-0eL">
+                                <rect key="frame" x="20" y="291" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6d3-5l-Ikv" firstAttribute="top" secondItem="4me-X7-vfH" secondAttribute="bottom" constant="20" id="84O-YM-aQb"/>
+                            <constraint firstItem="zsT-sf-0eL" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="20" id="9hL-bu-tib"/>
+                            <constraint firstItem="6d3-5l-Ikv" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="20" id="AkD-5j-rRZ"/>
+                            <constraint firstItem="mnh-Er-lxR" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="107" id="Ofp-n3-ted"/>
+                            <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="12j-ZA-gdF" secondAttribute="trailing" constant="17" id="VKc-H9-JNl"/>
+                            <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="4me-X7-vfH" secondAttribute="trailing" constant="20" id="aKl-4e-m4j"/>
+                            <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="6d3-5l-Ikv" secondAttribute="trailing" constant="20" id="bJa-KW-sk3"/>
+                            <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="zsT-sf-0eL" secondAttribute="trailing" constant="20" id="cVa-4P-opt"/>
+                            <constraint firstItem="12j-ZA-gdF" firstAttribute="leading" secondItem="mnh-Er-lxR" secondAttribute="trailing" constant="39" id="dIW-Za-4gB"/>
+                            <constraint firstItem="4me-X7-vfH" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="20" id="fMg-Xh-nTd"/>
+                            <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="mnh-Er-lxR" secondAttribute="trailing" constant="107" id="huZ-pe-D53"/>
+                            <constraint firstItem="12j-ZA-gdF" firstAttribute="top" secondItem="WZ7-dx-ysH" secondAttribute="top" constant="20" id="nbI-AP-SWs"/>
+                            <constraint firstItem="zsT-sf-0eL" firstAttribute="top" secondItem="6d3-5l-Ikv" secondAttribute="bottom" constant="20" id="p4T-cJ-wls"/>
+                            <constraint firstItem="mnh-Er-lxR" firstAttribute="top" secondItem="WZ7-dx-ysH" secondAttribute="top" constant="20" id="pvB-QY-fNe"/>
+                            <constraint firstItem="4me-X7-vfH" firstAttribute="top" secondItem="mnh-Er-lxR" secondAttribute="bottom" constant="20" id="y50-Q6-adh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WZ7-dx-ysH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="cq3-bA-GI8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pn7-ck-IuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1916" y="1480.2098950524739"/>
+            <point key="canvasLocation" x="1915.9420289855075" y="1479.6195652173915"/>
         </scene>
         <!--Profile-->
         <scene sceneID="RHO-2R-gWC">
@@ -340,6 +388,7 @@
     </scenes>
     <resources>
         <image name="businessbook-logo" width="225" height="225"/>
+        <image name="company" width="493" height="455"/>
         <image name="home-icon" width="24" height="24"/>
         <image name="profile-icon" width="24" height="24"/>
         <image name="reports-icon" width="24" height="24"/>
