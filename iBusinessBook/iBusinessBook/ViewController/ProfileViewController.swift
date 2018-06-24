@@ -10,6 +10,16 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var companyUITextField: UITextField!
+    
+    @IBOutlet weak var addressUITextField: UITextField!
+    
+    @IBOutlet weak var emailUITextField: UITextField!    
+  
+    @IBOutlet weak var phoneUITextField: UITextField!
+    
+    @IBOutlet weak var mobileUITextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
