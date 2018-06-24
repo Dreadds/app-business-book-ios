@@ -39,6 +39,10 @@ class LocalViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
         getLocalList()
     }
+    
+    @IBAction func showLocationAction(_ sender: UIButton){
+        self.performSegue(withIdentifier: "showLocation", sender: self)
+    }
 
 
     /*

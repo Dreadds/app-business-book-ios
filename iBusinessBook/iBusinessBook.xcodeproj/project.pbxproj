@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255215D220DF7C6D0011F8FB /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255215D120DF7C6D0011F8FB /* LocationRepository.swift */; };
 		25709C7620DB536000FB63D7 /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25709C7520DB536000FB63D7 /* Local.swift */; };
 		25709C7D20DB578700FB63D7 /* BusinessApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25709C7C20DB578700FB63D7 /* BusinessApi.swift */; };
+		257E410D20DF559900F88A38 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257E410C20DF559900F88A38 /* MapKit.framework */; };
+		257E412420DF585900F88A38 /* ShowLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257E412320DF585900F88A38 /* ShowLocationViewController.swift */; };
 		25A43A4C20DB605A00233F6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A43A4B20DB605A00233F6B /* HomeViewController.swift */; };
 		25A43A6720DC27B900233F6B /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A43A6620DC27B900233F6B /* LocalViewController.swift */; };
 		9A243F4920B1DB420060D849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A243F4820B1DB420060D849 /* AppDelegate.swift */; };
@@ -212,8 +215,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		255215D120DF7C6D0011F8FB /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 		25709C7520DB536000FB63D7 /* Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
 		25709C7C20DB578700FB63D7 /* BusinessApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessApi.swift; sourceTree = "<group>"; };
+		257E410C20DF559900F88A38 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		257E412320DF585900F88A38 /* ShowLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocationViewController.swift; sourceTree = "<group>"; };
 		25A43A4B20DB605A00233F6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		25A43A6620DC27B900233F6B /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		9A243F4520B1DB420060D849 /* iBusinessBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBusinessBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC0A7BF20DA28F600E14EBC /* Alamofire.framework in Frameworks */,
+				257E410D20DF559900F88A38 /* MapKit.framework in Frameworks */,
 				CDC0A7C320DA290000E14EBC /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				25709C7520DB536000FB63D7 /* Local.swift */,
+				255215D120DF7C6D0011F8FB /* LocationRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,8 +271,17 @@
 			children = (
 				25A43A4B20DB605A00233F6B /* HomeViewController.swift */,
 				25A43A6620DC27B900233F6B /* LocalViewController.swift */,
+				257E412320DF585900F88A38 /* ShowLocationViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		257E410B20DF559800F88A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				257E410C20DF559900F88A38 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9A243F3C20B1DB410060D849 = {
@@ -275,6 +292,7 @@
 				CDC0A76E20DA285D00E14EBC /* SwiftyJSON.xcodeproj */,
 				9A243F4720B1DB420060D849 /* iBusinessBook */,
 				9A243F4620B1DB420060D849 /* Products */,
+				257E410B20DF559800F88A38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -382,6 +400,11 @@
 					9A243F4420B1DB420060D849 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -588,7 +611,9 @@
 				25709C7D20DB578700FB63D7 /* BusinessApi.swift in Sources */,
 				9A243F4B20B1DB420060D849 /* ViewController.swift in Sources */,
 				25709C7620DB536000FB63D7 /* Local.swift in Sources */,
+				255215D220DF7C6D0011F8FB /* LocationRepository.swift in Sources */,
 				9A243F5120B1DB420060D849 /* iBusinessBook.xcdatamodeld in Sources */,
+				257E412420DF585900F88A38 /* ShowLocationViewController.swift in Sources */,
 				9A243F4920B1DB420060D849 /* AppDelegate.swift in Sources */,
 				25A43A6720DC27B900233F6B /* LocalViewController.swift in Sources */,
 				25A43A4C20DB605A00233F6B /* HomeViewController.swift in Sources */,

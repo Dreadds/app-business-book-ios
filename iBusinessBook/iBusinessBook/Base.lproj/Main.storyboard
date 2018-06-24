@@ -182,6 +182,35 @@
             </objects>
             <point key="canvasLocation" x="-135" y="908"/>
         </scene>
+        <!--Show Location View Controller-->
+        <scene sceneID="Drl-2B-Loc">
+            <objects>
+                <viewController id="DoD-Bt-gik" customClass="ShowLocationViewController" customModule="iBusinessBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pS4-P9-PpW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9bW-FS-toY">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9bW-FS-toY" firstAttribute="leading" secondItem="zTQ-qe-u1l" secondAttribute="leading" id="3LU-RT-bDL"/>
+                            <constraint firstItem="9bW-FS-toY" firstAttribute="top" secondItem="zTQ-qe-u1l" secondAttribute="top" id="GyX-n9-aEh"/>
+                            <constraint firstItem="9bW-FS-toY" firstAttribute="bottom" secondItem="zTQ-qe-u1l" secondAttribute="bottom" id="LdS-TA-ih1"/>
+                            <constraint firstItem="9bW-FS-toY" firstAttribute="trailing" secondItem="zTQ-qe-u1l" secondAttribute="trailing" id="Xmg-3N-rIw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zTQ-qe-u1l"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="9bW-FS-toY" id="AVA-8v-Rxs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMU-xt-saX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2716" y="-10"/>
+        </scene>
         <!--Home-->
         <scene sceneID="5FC-77-MSA">
             <objects>
@@ -205,8 +234,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtZ-MC-DsO">
-                                            <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="20"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="0.0" y="10" width="48" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -214,22 +243,32 @@
                                             <rect key="frame" x="8" y="91" width="293" height="128"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbU-zd-ega">
-                                            <rect key="frame" x="0.0" y="35" width="37" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <rect key="frame" x="0.0" y="35" width="44" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5P-7r-e9x">
+                                            <rect key="frame" x="280" y="18" width="21" height="22"/>
+                                            <state key="normal" image="maps-and-flags"/>
+                                            <connections>
+                                                <action selector="showLocationAction:" destination="OGp-JR-o3q" eventType="touchUpInside" id="2tK-MY-gTv"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="pbU-zd-ega" firstAttribute="leading" secondItem="c1Z-Qx-03e" secondAttribute="leading" id="1yc-W1-l2c"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pbU-zd-ega" secondAttribute="trailing" symbolic="YES" id="6F7-wU-Ng9"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mtZ-MC-DsO" secondAttribute="trailing" symbolic="YES" id="Jp1-kd-fSC"/>
+                                    <constraint firstItem="mtZ-MC-DsO" firstAttribute="leading" secondItem="c1Z-Qx-03e" secondAttribute="leading" id="Tcd-bS-Edo"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="CvV-oD-joB" secondAttribute="bottom" id="ab3-kj-WWS"/>
+                                    <constraint firstItem="q5P-7r-e9x" firstAttribute="top" secondItem="c1Z-Qx-03e" secondAttribute="topMargin" constant="10" id="cF8-3N-yHe"/>
                                     <constraint firstItem="CvV-oD-joB" firstAttribute="leading" secondItem="c1Z-Qx-03e" secondAttribute="leadingMargin" id="dIq-LI-axR"/>
-                                    <constraint firstItem="mtZ-MC-DsO" firstAttribute="leading" secondItem="c1Z-Qx-03e" secondAttribute="leading" id="dOy-qa-Oef"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="CvV-oD-joB" secondAttribute="trailing" id="h39-RW-TM5"/>
-                                    <constraint firstItem="mtZ-MC-DsO" firstAttribute="top" secondItem="c1Z-Qx-03e" secondAttribute="top" id="mvi-P1-pE7"/>
-                                    <constraint firstItem="pbU-zd-ega" firstAttribute="top" secondItem="mtZ-MC-DsO" secondAttribute="bottom" constant="15" id="nSU-am-25b"/>
                                     <constraint firstItem="pbU-zd-ega" firstAttribute="top" secondItem="c1Z-Qx-03e" secondAttribute="top" constant="35" id="pEK-n5-FBD"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="q5P-7r-e9x" secondAttribute="trailing" id="rIN-D8-ejJ"/>
+                                    <constraint firstItem="mtZ-MC-DsO" firstAttribute="top" secondItem="c1Z-Qx-03e" secondAttribute="top" constant="10" id="tui-mZ-j2f"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="direction" destination="pbU-zd-ega" id="oGs-gL-g5N"/>
@@ -243,6 +282,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Home" id="m7a-d7-xmv"/>
+                    <connections>
+                        <segue destination="DoD-Bt-gik" kind="show" identifier="showLocation" id="c7P-9K-jbc"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y5x-IV-KIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,6 +383,7 @@
     <resources>
         <image name="businessbook-logo" width="225" height="225"/>
         <image name="home-icon" width="24" height="24"/>
+        <image name="maps-and-flags" width="21" height="21"/>
         <image name="profile-icon" width="24" height="24"/>
         <image name="reports-icon" width="24" height="24"/>
         <image name="store" width="128" height="128"/>
