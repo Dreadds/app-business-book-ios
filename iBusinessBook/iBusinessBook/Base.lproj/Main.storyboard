@@ -448,15 +448,25 @@
                         <viewLayoutGuide key="safeArea" id="WZ7-dx-ysH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="cq3-bA-GI8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4lA-n8-gOl"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BV7-Hg-I7b"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4lA-n8-gOl">
+                            <connections>
+                                <action selector="cancelAction:" destination="Iye-a4-F7e" id="D4l-tQ-p6n"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BV7-Hg-I7b">
+                            <connections>
+                                <action selector="saveAction:" destination="Iye-a4-F7e" id="YrL-zU-gvM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addressUITextField" destination="sPH-bO-z4X" id="haz-yL-c2U"/>
+                        <outlet property="cancelButtonItem" destination="4lA-n8-gOl" id="AcM-AA-V1w"/>
                         <outlet property="companyUITextField" destination="6d3-5l-Ikv" id="ytj-NL-9Zs"/>
                         <outlet property="emailUITextField" destination="vkP-Eo-6hL" id="bER-Bs-ZiW"/>
                         <outlet property="mobileUITextField" destination="idF-LN-HOg" id="mIT-xz-rJF"/>
                         <outlet property="phoneUITextField" destination="WlI-eX-JdG" id="aD0-x4-Ffc"/>
+                        <outlet property="saveButtonItem" destination="BV7-Hg-I7b" id="5U2-Ho-3gh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pn7-ck-IuH" userLabel="First Responder" sceneMemberID="firstResponder"/>

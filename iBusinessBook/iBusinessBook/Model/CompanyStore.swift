@@ -19,6 +19,7 @@ class CompanyStore{
         company.setValue(email, forKey: "email")
         company.setValue(phone, forKey: "phone")
         company.setValue(mobile, forKey: "name")
+        save()
         
         
     }
@@ -29,6 +30,14 @@ class CompanyStore{
     private func createObject(forEntityName name: String) -> NSManagedObject? {
         let entity = NSEntityDescription.entity(forEntityName: name, in: getContext())
         return NSManagedObject(entity: entity!, insertInto: getContext())
+    }
+    private func save(){
+        do{
+            try getContext().save()
+            print("Saved!")
+        }catch let error as NSError{
+            print("Could not save. \(error). User Info: \(error.userInfo)")
+        }
     }
     
 }
