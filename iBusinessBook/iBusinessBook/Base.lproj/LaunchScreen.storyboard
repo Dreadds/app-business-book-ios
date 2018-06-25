@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,20 +31,11 @@
                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lleva tu empresa siempre contigo..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiR-8F-lWp">
-                                <rect key="frame" x="16" y="459" width="343" height="72"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uiR-8F-lWp" secondAttribute="trailing" constant="16" id="5c9-48-Fsx"/>
-                            <constraint firstItem="uiR-8F-lWp" firstAttribute="top" secondItem="xtr-Z1-9SD" secondAttribute="bottom" constant="40" id="BDM-js-AYE"/>
                             <constraint firstItem="xtr-Z1-9SD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dvr-6R-aFC"/>
                             <constraint firstItem="xtr-Z1-9SD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GrP-xt-qjU"/>
-                            <constraint firstItem="uiR-8F-lWp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RaF-c3-eLH"/>
                             <constraint firstItem="fJq-cb-Ozj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fIk-Uj-tEu"/>
                             <constraint firstItem="fJq-cb-Ozj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gjk-XZ-rfg"/>
                             <constraint firstAttribute="bottom" secondItem="fJq-cb-Ozj" secondAttribute="bottom" id="h8R-g9-t5I"/>
