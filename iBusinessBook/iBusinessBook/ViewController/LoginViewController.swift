@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        login()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -48,6 +48,9 @@ class LoginViewController: UIViewController {
         })
     }
 
+    @IBAction func signInAction(_ sender: UIButton) {
+        login()
+    }
     /*
     // MARK: - Navigation
 

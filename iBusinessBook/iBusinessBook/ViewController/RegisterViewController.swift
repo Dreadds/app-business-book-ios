@@ -42,6 +42,22 @@ class RegisterViewController: UIViewController {
                         print("BusinessApi Error: \(json["message"].stringValue)")
                         return
                     }
+                    Alamofire.request(BusinessApi.postLoginUrl, method: .post, parameters: parameters)
+                        .validate()
+                        .responseJSON(completionHandler: {response in
+                            switch response.result {
+                            case .success(let value):
+                                let json = JSON(value)
+                                let status = json["status"].stringValue
+                                if status == "error" {
+                                    print("BusinessApi Error: \(json["message"].stringValue)")
+                                    return
+                                }
+                            case .failure(let error):
+                                print("Response Error: \(error.localizedDescription)")
+                                
+                            }
+                        })
                 case .failure(let error):
                     print("Response Error: \(error.localizedDescription)")
                     

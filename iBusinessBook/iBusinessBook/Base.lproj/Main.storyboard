@@ -265,6 +265,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="signInAction:" destination="bgb-Nq-Yyr" eventType="touchUpInside" id="8Ep-IB-90x"/>
                                     <segue destination="2ph-8E-qHf" kind="presentation" id="AYz-4R-Nkv"/>
                                 </connections>
                             </button>
@@ -627,6 +628,6 @@
         <image name="store" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ll8-Ru-W1r"/>
+        <segue reference="AYz-4R-Nkv"/>
     </inferredMetricsTieBreakers>
 </document>
