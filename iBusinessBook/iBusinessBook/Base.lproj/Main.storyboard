@@ -101,7 +101,7 @@
         <!--Register-->
         <scene sceneID="JNe-dB-zTh">
             <objects>
-                <viewController title="Register" id="7Ub-0s-sYV" sceneMemberID="viewController">
+                <viewController title="Register" id="7Ub-0s-sYV" customClass="RegisterViewController" customModule="iBusinessBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uWe-Af-rYo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,6 +117,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="createAcoountAction:" destination="7Ub-0s-sYV" eventType="touchUpInside" id="tJd-3U-xBx"/>
                                     <segue destination="2ph-8E-qHf" kind="presentation" id="ll8-Ru-W1r"/>
                                 </connections>
                             </button>
@@ -201,6 +202,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ku1-Up-DMP"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ne4-rE-bzj" id="4je-jz-cGi"/>
+                        <outlet property="nameTextField" destination="GR8-t7-8J7" id="GLQ-0n-27C"/>
+                        <outlet property="passwordTextField" destination="0ov-Xr-Yz6" id="Epk-Jz-dD7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr6-F1-dYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -209,7 +215,7 @@
         <!--Login-->
         <scene sceneID="ed1-Ne-Z2N">
             <objects>
-                <viewController title="Login" id="bgb-Nq-Yyr" sceneMemberID="viewController">
+                <viewController title="Login" id="bgb-Nq-Yyr" customClass="LoginViewController" customModule="iBusinessBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OdP-au-IsG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,6 +265,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="signInAction:" destination="bgb-Nq-Yyr" eventType="touchUpInside" id="8Ep-IB-90x"/>
                                     <segue destination="2ph-8E-qHf" kind="presentation" id="AYz-4R-Nkv"/>
                                 </connections>
                             </button>
@@ -289,6 +296,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r1M-A3-O0g"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="tv2-kz-r7a" id="vHP-qR-OF6"/>
+                        <outlet property="passwordTextField" destination="dIo-Wh-Sjs" id="Bpt-gg-2FB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a39-Qv-DBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -617,6 +628,6 @@
         <image name="store" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ll8-Ru-W1r"/>
+        <segue reference="AYz-4R-Nkv"/>
     </inferredMetricsTieBreakers>
 </document>

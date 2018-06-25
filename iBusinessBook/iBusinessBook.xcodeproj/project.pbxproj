@@ -24,6 +24,8 @@
 		CDC0A7C020DA28F600E14EBC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0A79820DA28CE00E14EBC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDC0A7C320DA290000E14EBC /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0A7B220DA28D600E14EBC /* AlamofireImage.framework */; };
 		CDC0A7C420DA290000E14EBC /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0A7B220DA28D600E14EBC /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDC3F7CB20E0997000B2F2D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3F7CA20E0997000B2F2D4 /* RegisterViewController.swift */; };
+		CDC3F7E620E0A03A00B2F2D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3F7E520E0A03A00B2F2D4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +233,8 @@
 		CDC0A76E20DA285D00E14EBC /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		CDC0A78C20DA28CD00E14EBC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		CDC0A7A520DA28D500E14EBC /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = ../AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
+		CDC3F7CA20E0997000B2F2D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CDC3F7E520E0A03A00B2F2D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,8 @@
 				25A43A4B20DB605A00233F6B /* HomeViewController.swift */,
 				25A43A6620DC27B900233F6B /* LocalViewController.swift */,
 				9A5EB9E920E00F5900706370 /* ProfileViewController.swift */,
+				CDC3F7CA20E0997000B2F2D4 /* RegisterViewController.swift */,
+				CDC3F7E520E0A03A00B2F2D4 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -592,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25709C7D20DB578700FB63D7 /* BusinessApi.swift in Sources */,
+				CDC3F7CB20E0997000B2F2D4 /* RegisterViewController.swift in Sources */,
 				9A243F4B20B1DB420060D849 /* ViewController.swift in Sources */,
 				25709C7620DB536000FB63D7 /* Local.swift in Sources */,
 				9A243F5120B1DB420060D849 /* iBusinessBook.xcdatamodeld in Sources */,
@@ -600,6 +607,7 @@
 				9A5EB9EA20E00F5900706370 /* ProfileViewController.swift in Sources */,
 				9A5EBA0120E01A5400706370 /* Profile.swift in Sources */,
 				25A43A4C20DB605A00233F6B /* HomeViewController.swift in Sources */,
+				CDC3F7E620E0A03A00B2F2D4 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
