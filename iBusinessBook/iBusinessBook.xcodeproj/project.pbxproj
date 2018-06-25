@@ -17,6 +17,8 @@
 		9A243F5120B1DB420060D849 /* iBusinessBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A243F4F20B1DB420060D849 /* iBusinessBook.xcdatamodeld */; };
 		9A243F5320B1DB420060D849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A243F5220B1DB420060D849 /* Assets.xcassets */; };
 		9A243F5620B1DB420060D849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A243F5420B1DB420060D849 /* LaunchScreen.storyboard */; };
+		9A5EB9EA20E00F5900706370 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5EB9E920E00F5900706370 /* ProfileViewController.swift */; };
+		9A5EBA0120E01A5400706370 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5EBA0020E01A5400706370 /* Profile.swift */; };
 		CDC0A78820DA286F00E14EBC /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0A77A20DA285E00E14EBC /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDC0A7BF20DA28F600E14EBC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0A79820DA28CE00E14EBC /* Alamofire.framework */; };
 		CDC0A7C020DA28F600E14EBC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0A79820DA28CE00E14EBC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -224,6 +226,8 @@
 		9A243F5220B1DB420060D849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A243F5520B1DB420060D849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A243F5720B1DB420060D849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5EB9E920E00F5900706370 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9A5EBA0020E01A5400706370 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		CDC0A76E20DA285D00E14EBC /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		CDC0A78C20DA28CD00E14EBC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		CDC0A7A520DA28D500E14EBC /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = ../AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				25709C7520DB536000FB63D7 /* Local.swift */,
+				9A5EBA0020E01A5400706370 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			children = (
 				25A43A4B20DB605A00233F6B /* HomeViewController.swift */,
 				25A43A6620DC27B900233F6B /* LocalViewController.swift */,
+				9A5EB9E920E00F5900706370 /* ProfileViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -591,6 +597,8 @@
 				9A243F5120B1DB420060D849 /* iBusinessBook.xcdatamodeld in Sources */,
 				9A243F4920B1DB420060D849 /* AppDelegate.swift in Sources */,
 				25A43A6720DC27B900233F6B /* LocalViewController.swift in Sources */,
+				9A5EB9EA20E00F5900706370 /* ProfileViewController.swift in Sources */,
+				9A5EBA0120E01A5400706370 /* Profile.swift in Sources */,
 				25A43A4C20DB605A00233F6B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
