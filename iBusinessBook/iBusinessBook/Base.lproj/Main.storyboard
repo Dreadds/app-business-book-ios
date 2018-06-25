@@ -471,35 +471,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6d3-5l-Ikv">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6d3-5l-Ikv">
                                 <rect key="frame" x="30" y="226" width="354" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkP-Eo-6hL">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@gmail.com" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkP-Eo-6hL">
                                 <rect key="frame" x="30" y="400" width="354" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WlI-eX-JdG">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WlI-eX-JdG">
                                 <rect key="frame" x="30" y="487" width="354" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idF-LN-HOg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number:" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idF-LN-HOg">
                                 <rect key="frame" x="30" y="574" width="354" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12j-ZA-gdF">
-                                <rect key="frame" x="313" y="104" width="51" height="30"/>
-                                <state key="normal" title="Update"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-bO-z4X">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-bO-z4X">
                                 <rect key="frame" x="30" y="313" width="354" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -529,7 +525,6 @@
                             <constraint firstItem="WlI-eX-JdG" firstAttribute="top" secondItem="zx7-qT-TSU" secondAttribute="bottom" constant="20" id="Qz2-k3-pNM"/>
                             <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="vkP-Eo-6hL" secondAttribute="trailing" constant="30" id="Tem-RK-UCs"/>
                             <constraint firstItem="sPH-bO-z4X" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="30" id="UE7-3l-ohG"/>
-                            <constraint firstItem="12j-ZA-gdF" firstAttribute="leading" secondItem="mnh-Er-lxR" secondAttribute="trailing" constant="56" id="UUS-Oe-nFS"/>
                             <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="o2G-l5-SZI" secondAttribute="trailing" constant="30" id="X7S-JJ-fKh"/>
                             <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="6d3-5l-Ikv" secondAttribute="trailing" constant="30" id="asN-NT-8pn"/>
                             <constraint firstItem="IjX-vD-ZqX" firstAttribute="top" secondItem="sPH-bO-z4X" secondAttribute="bottom" constant="20" id="daK-hI-7ZW"/>
@@ -538,24 +533,34 @@
                             <constraint firstItem="4me-X7-vfH" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="30" id="hSq-hg-O8Z"/>
                             <constraint firstItem="zx7-qT-TSU" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="30" id="mSC-kI-HKR"/>
                             <constraint firstItem="6d3-5l-Ikv" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="30" id="oc5-y3-yGt"/>
-                            <constraint firstItem="12j-ZA-gdF" firstAttribute="leading" secondItem="mnh-Er-lxR" secondAttribute="trailing" constant="56" id="pgA-A5-r9l"/>
                             <constraint firstItem="IjX-vD-ZqX" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="30" id="sEb-yx-1d0"/>
                             <constraint firstItem="6d3-5l-Ikv" firstAttribute="top" secondItem="4me-X7-vfH" secondAttribute="bottom" constant="20" id="sZC-jZ-Bxw"/>
                             <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="idF-LN-HOg" secondAttribute="trailing" constant="30" id="t3Q-d2-RWV"/>
-                            <constraint firstItem="12j-ZA-gdF" firstAttribute="top" secondItem="WZ7-dx-ysH" secondAttribute="top" constant="40" id="uen-iQ-CIt"/>
-                            <constraint firstItem="WZ7-dx-ysH" firstAttribute="trailing" secondItem="12j-ZA-gdF" secondAttribute="trailing" constant="50" id="wWe-1T-K5I"/>
                             <constraint firstItem="o2G-l5-SZI" firstAttribute="top" secondItem="WlI-eX-JdG" secondAttribute="bottom" constant="20" id="x7G-VW-4C8"/>
                             <constraint firstItem="WlI-eX-JdG" firstAttribute="leading" secondItem="WZ7-dx-ysH" secondAttribute="leading" constant="30" id="xtz-se-w6p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WZ7-dx-ysH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="cq3-bA-GI8"/>
+                    <navigationItem key="navigationItem" title="Profile" id="cq3-bA-GI8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4lA-n8-gOl">
+                            <connections>
+                                <action selector="cancelAction:" destination="Iye-a4-F7e" id="D4l-tQ-p6n"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BV7-Hg-I7b">
+                            <connections>
+                                <action selector="saveAction:" destination="Iye-a4-F7e" id="YrL-zU-gvM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressUITextField" destination="sPH-bO-z4X" id="haz-yL-c2U"/>
+                        <outlet property="cancelButtonItem" destination="4lA-n8-gOl" id="AcM-AA-V1w"/>
                         <outlet property="companyUITextField" destination="6d3-5l-Ikv" id="ytj-NL-9Zs"/>
                         <outlet property="emailUITextField" destination="vkP-Eo-6hL" id="bER-Bs-ZiW"/>
                         <outlet property="mobileUITextField" destination="idF-LN-HOg" id="mIT-xz-rJF"/>
                         <outlet property="phoneUITextField" destination="WlI-eX-JdG" id="aD0-x4-Ffc"/>
+                        <outlet property="saveButtonItem" destination="BV7-Hg-I7b" id="5U2-Ho-3gh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pn7-ck-IuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
