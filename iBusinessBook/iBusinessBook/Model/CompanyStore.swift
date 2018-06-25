@@ -1,5 +1,5 @@
 //
-//  Profile.swift
+//  CompanyStore.swift
 //  iBusinessBook
 //
 //  Created by Jacqueline Altamirano on 24/06/18.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+import CoreData
+CompanyStore{
+    
+}
